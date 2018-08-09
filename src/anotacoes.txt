@@ -8,4 +8,11 @@ Meios de I/O
 - Rede
 - Console
 
+Entrada:
+    FileInputStream(InputStream) -> InputStreamReader(Reader) -> BufferedReader [readLine()]
+Saida:
+    FileOutputStream(OutputStream) -> OutputStreamWriter(Writer) -> BufferredWriter [write()]
+
+FileWriter / PrintStream / PrintWriter = alto nivel para simplificar
+
 System.lineSeparator() = "\r\n"
