@@ -2,3 +2,8 @@ Padrao Decorator: "um objeto está decorando a funcionalidade de outro, sucessiv
 
 Stream: Ler bits e bytes
 Reader: Ler caracteres ou dados binarios
+
+Meios de I/O
+- Arquivo
+- Rede
+- Console
