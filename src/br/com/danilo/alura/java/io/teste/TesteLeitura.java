@@ -7,8 +7,8 @@ public class TesteLeitura {
     public static void main(String[] args) throws IOException {
 
         // Fluxo  de Entrada com Arquivo
-        FileInputStream fileInputStream = new FileInputStream("lorem.txt");
-        InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+        InputStream fileInputStream = new FileInputStream("lorem.txt");
+        Reader inputStreamReader = new InputStreamReader(fileInputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
         String linha = bufferedReader.readLine();
