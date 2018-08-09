@@ -6,7 +6,7 @@ public class TesteFluxosConsole {
 
     public static void main(String[] args) throws IOException {
 
-        InputStream inputStream =  System.in; //Entrada pelo teclado
+        InputStream inputStream =  new FileInputStream("lorem.txt"); //Entrada pelo arquivo
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
