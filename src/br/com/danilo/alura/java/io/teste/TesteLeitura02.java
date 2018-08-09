@@ -11,7 +11,13 @@ public class TesteLeitura02 {
     public static void main(String[] args) throws IOException {
 
         Scanner scanner = new Scanner(new File("contas.csv"));
-        String linha = scanner.nextLine();
-        System.out.println(linha);
+
+        String linha;
+        while (scanner.hasNextLine()) {
+            linha = scanner.nextLine();
+            System.out.println(linha);
+        }
+
+        scanner.close();
     }
 }
