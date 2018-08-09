@@ -5,7 +5,7 @@ import java.io.*;
 /**
  *  Fluxo de Saida com Arquivo - alto nivel
  */
-public class TesteEscrita03 {
+public class TesteEscritaPrintStreamPrintWriter {
 
     public static void main(String[] args) throws IOException {
 
