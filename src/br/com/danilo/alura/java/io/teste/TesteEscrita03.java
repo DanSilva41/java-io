@@ -15,14 +15,14 @@ public class TesteEscrita03 {
 
 //        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("lorem-escrito02.txt"));
 
-        PrintStream printStream = new PrintStream("lorem-escrito03.txt");
+//        PrintStream printStream = new PrintStream("lorem-escrito03.txt");
+        PrintWriter printWriter = new PrintWriter("lorem-escrito03.txt");
 
-        printStream.println("Aliquam erat volutpat. Praesent eleifend congue quam.");
-        printStream.println();
-        printStream.println("Sed interdum urna ipsum, sit amet molestie dui fermentum vel.");
+        printWriter.println("Aliquam erat volutpat. Praesent eleifend congue quam.");
+        printWriter.println();
+        printWriter.println("Sed interdum urna ipsum, sit amet molestie dui fermentum vel.");
 
-
-        printStream.close();
+        printWriter.close();
 
         System.out.println("Escrita terminada!");
     }
