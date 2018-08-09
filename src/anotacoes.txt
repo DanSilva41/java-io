@@ -17,3 +17,5 @@ Saida:
 - O atributo System.out é do tipo PrintStream
 - O método System.lineSeparator() devolve os caracteres que representam uma nova linha
 - O método System.currentTimeMillis() devolve os milissegundos que passaram desde 1 de janeiro de 1970
+
+Arrays.toString(array[] qualquerTipo): para gerar qualquer array em uma String
