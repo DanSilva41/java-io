@@ -6,12 +6,12 @@ public class TesteFluxosConsole {
 
     public static void main(String[] args) throws IOException {
 
-        InputStream fileInputStream =  System.in; //Entrada pelo teclado
-        InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+        InputStream inputStream =  System.in; //Entrada pelo teclado
+        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
-        FileOutputStream fileOutputStream = new FileOutputStream("lorem-do-teclado.txt");
-        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
+        OutputStream outputStream = System.out;
+        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
         BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
 
         String linha = bufferedReader.readLine();
