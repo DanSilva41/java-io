@@ -12,7 +12,6 @@ Entrada:
     FileInputStream(InputStream) -> InputStreamReader(Reader) -> BufferedReader [readLine()]
 Saida:
     FileOutputStream(OutputStream) -> OutputStreamWriter(Writer) -> BufferredWriter [write()]
-
-FileWriter / PrintStream / PrintWriter = alto nivel para simplificar
+    Ao nivel para simplificar = FileWriter / PrintStream / PrintWriter
 
 System.lineSeparator() = "\r\n"
