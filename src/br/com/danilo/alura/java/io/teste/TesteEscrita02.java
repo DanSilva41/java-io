@@ -15,11 +15,16 @@ public class TesteEscrita02 {
 
         // Forma mais alto ni'vel
         FileWriter fileWriter = new FileWriter("lorem-escrito02.txt");
-        fileWriter.write("Aliquam erat volutpat. Praesent eleifend congue quam.");
-        fileWriter.write(System.lineSeparator()); //
-        fileWriter.write(System.lineSeparator());
-        fileWriter.write("Sed interdum urna ipsum, sit amet molestie dui fermentum vel.");
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
+        bufferedWriter.write("Aliquam erat volutpat. Praesent eleifend congue quam.");
+        bufferedWriter.newLine();
+        bufferedWriter.newLine();
+        bufferedWriter.newLine();
+        bufferedWriter.write("Sed interdum urna ipsum, sit amet molestie dui fermentum vel.");
+
+
+        bufferedWriter.close();
         fileWriter.close();
 
         System.out.println("Escrita terminada!");
