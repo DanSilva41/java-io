@@ -7,10 +7,11 @@ public class TesteLeitura {
     public static void main(String[] args) throws IOException {
 
         // Fluxo  de Entrada com Arquivo
-        InputStream fileInputStream = new FileInputStream("lorem.txt");
-        Reader inputStreamReader = new InputStreamReader(fileInputStream);
+        FileInputStream fileInputStream = new FileInputStream("lorem.txt");
+        InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
+//        bufferedReader.ready(); Verifica o arquivo esta pronto para ser lido
         String linha = bufferedReader.readLine();
 
         // Percorrer todas as linhas do arquivo
