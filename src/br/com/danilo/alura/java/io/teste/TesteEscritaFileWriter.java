@@ -5,7 +5,7 @@ import java.io.*;
 /**
  *  Fluxo de Saida com Arquivo - alto nivel
  */
-public class TesteEscrita02 {
+public class TesteEscritaFileWriter {
 
     public static void main(String[] args) throws IOException {
 
@@ -14,8 +14,7 @@ public class TesteEscrita02 {
 //        BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
 
         // Forma mais alto ni'vel
-        FileWriter fileWriter = new FileWriter("lorem-escrito02.txt");
-        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("lorem-escrito02.txt"));
 
         bufferedWriter.write("Aliquam erat volutpat. Praesent eleifend congue quam.");
         bufferedWriter.newLine();
@@ -25,7 +24,6 @@ public class TesteEscrita02 {
 
 
         bufferedWriter.close();
-        fileWriter.close();
 
         System.out.println("Escrita terminada!");
     }
