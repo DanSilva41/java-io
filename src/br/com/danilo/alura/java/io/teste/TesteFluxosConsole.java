@@ -20,6 +20,7 @@ public class TesteFluxosConsole {
         while (linha != null && !linha.isEmpty()) {
             bufferedWriter.write(linha);
             bufferedWriter.newLine();
+            bufferedWriter.flush(); // força a secrita instantanea
             linha = bufferedReader.readLine();
         }
 
