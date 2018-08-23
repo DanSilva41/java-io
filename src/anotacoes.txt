@@ -19,3 +19,9 @@ Saida:
 - O método System.currentTimeMillis() devolve os milissegundos que passaram desde 1 de janeiro de 1970
 
 Arrays.toString(array[] qualquerTipo): para gerar qualquer array em uma String
+
+Charset.defaultCharset(); // Como  descobrir o Encoding usado pelo SO
+
+----
+Serialização: Pegar o objeto e transformar em um fluxo de bits e bytes -        java.io.ObjectOutputStream
+Serialização: Pegar um fluxo de bits e bytes e criar um objeto através disso-   java.io.ObjectInputStream

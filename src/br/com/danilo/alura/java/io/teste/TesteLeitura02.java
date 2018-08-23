@@ -10,7 +10,7 @@ public class TesteLeitura02 {
 
     public static void main(String[] args) throws IOException {
 
-        Scanner scanner = new Scanner(new File("contas.csv"));
+        Scanner scanner = new Scanner(new File("contas.csv"), "UTF-8");
 
         String linha;
         while (scanner.hasNextLine()) {
