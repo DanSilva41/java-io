@@ -1,6 +1,10 @@
 package br.com.danilo.alura.java.io.teste.herdado;
 
-public class Cliente {
+import java.io.Serializable;
+
+public class Cliente implements Serializable {
+
+    private static final long serialVersionUID = 8002348808178928574L;
 
     private String nome;
     private String cpf;

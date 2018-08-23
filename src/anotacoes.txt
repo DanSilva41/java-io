@@ -25,3 +25,12 @@ Charset.defaultCharset(); // Como  descobrir o Encoding usado pelo SO
 ----
 Serialização: Pegar o objeto e transformar em um fluxo de bits e bytes -        java.io.ObjectOutputStream
 Serialização: Pegar um fluxo de bits e bytes e criar um objeto através disso-   java.io.ObjectInputStream
+
+Para serializar um objeto, é preciso que ele implemente java.io.Serializable: Para não lançar NotSerializableException
+
+serialVersionUID: para administrar a versão da classe
+O serialVersionUID se altera somente quando há uma alteração nas informações estruturais do objeto.
+
+Em Serialização com herança, todas os objetos relacionados devem ser serializados(inclusive as superclasses e subclasses).
+
+Para informar que um objeto não deve passar pela serialização basta informar que com a a palavra-chave *transient*
